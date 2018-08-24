@@ -21,7 +21,7 @@ let totalBatteries = batteryBatches.reduce((totalBatteries, element)=> {
   return totalBatteries + element;
 }, 0)
 
-const wordCountMap = monologueLines.reduce((wordCountMap, element) => {
+let wordCountMap = monologueLines.reduce((wordCountMap, element) => {
   let sentenceLength = element.splice(" ").length;
   if(wordCountMap.hasOwnProperty(sentenceLength.toString())) {
     wordCountMap[sentenceLength.toString()] += 1; 
