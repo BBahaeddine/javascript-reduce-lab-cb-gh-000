@@ -17,6 +17,6 @@ const monologueLines = [
   'I am the one who knocks!'
 ];
 
-totalBatteries = batteryBatches.reduce((element, totalBatteries)=> {
+totalBatteries = batteryBatches.reduce((totalBatteries;, element)=> {
   return totalBatteries + element;
 }, 0)
