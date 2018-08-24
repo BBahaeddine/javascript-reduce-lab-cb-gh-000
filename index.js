@@ -18,5 +18,5 @@ const monologueLines = [
 ];
 
 totalBatteries = batteryBatches.reduce(element=> {
-  return element
+  return totalBatteries + element;
 }, 0)
